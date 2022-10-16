@@ -7,12 +7,17 @@
     <meta name="description" content="Creating an html blog page" />
     <meta name="author" content="a. taha and Godslove" />
     <title>Blog page</title>
+    <Style>
+      label {
+        display: block;
+      }
+    </Style>
     </head>
 
-  <body style="background-image: url('assets/laptop.png');" >
+  <body style="background-image: url('assets/laptop.png'); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
     <article>
-      <h1>What Programmers do</h1>
-      <p>In general, the programmer's job is to convert problem solutions into 
+      <h1 style="color: white;">What Programmers do</h1>
+      <p style="color: white;">In general, the programmer's job is to convert problem solutions into 
         instructions for the computer. That is, the programmer prepares the 
         instructions of a computer program and runs those instructions on the 
         computer, tests the program to see if it is working properly, and makes 
@@ -23,26 +28,27 @@
       </p>
     </article>
     
-      <h3>Contact Us!</h3>
+      <h3 style="color: white;">Contact Us!</h3>
       <form
         action="mailto:contact@yourdomain.com"
         method="POST"
         enctype="multipart/form-data"
         name="EmailForm"
       >
-        <label for="sender_name">Name:</label>
+        <label for="sender_name" style="color: white;">Name</label>
         <input type="text" size="19" name="sender_name" /> <br /><br />
-        <label for="sender_email">Email:</label>
-        <input type="email" name="sender_email" /> <br />
+        <label for="sender_email" style="color: white;">Email*</label>
+        <input type="email" name="sender_email" required> <br />
         <br />
-        <label for="message">Please input your message here:</label>
-        <textarea name="message"> </textarea><br />
-        <button type="submit" value="Submit">Send</button>
+        <label for="message" style="color: white;">Please input your message here:</label>
+        <textarea name="message"></textarea><br />
+        <button type="submit" value="Submit" style="color: rgb(11, 67, 15); border: 2px; padding: 5px 20px 5px 20px; font-size: 20px; color: blue;"><b>Send</b></button>
+        <p style="color: white;">fields mark * are compulsory</p>
       </form>
    
-    <footer>
-      <p>Owners: a. taha and Godslove</p>
-      <p>Contact: develhope.co</p>
+    <footer style="font-size: 12px;">
+      <p style="color: white;">Owners: a. taha and Godslove</p>
+      <p style="color: white;">Contact: develhope.co</p>
     </footer>
 
 </body>
